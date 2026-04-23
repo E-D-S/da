@@ -7,9 +7,9 @@ export default function decorate(block) {
   // setup text for marquee
   [...block.children].forEach((row) => {
     [...row.children].forEach((col) => {
-      const div = col.querySelector('div');
-      if (div) {
-        const divWrapper = div.closest('div');
+      const dv = col.querySelector('div');
+      if (dv) {
+        const divWrapper = dv.closest('div');
         if (divWrapper && divWrapper.children.length === 1) {
           divWrapper.classList.add('arja-text-col');
         }
