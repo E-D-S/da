@@ -11,7 +11,6 @@ export default function decorate(block) {
       if (div) {
         const divWrapper = div.closest('div');
         if (divWrapper && divWrapper.children.length === 1) {
-          // picture is only content in column
           divWrapper.classList.add('arja-text-col');
         }
       }
